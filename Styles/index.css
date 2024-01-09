@@ -1,0 +1,57 @@
+body {
+    color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ne marche pas à faire */
+    position: sticky;
+    top: 0px;
+
+}
+nav img {
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+#photoPammachius {
+    float: left;
+    justify-content: center;
+}
+
+.navDroite {
+    text-align: end;
+}
+.navDroite a {
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-decoration: none;
+
+}
+
+main {
+text-align: center;
+
+} 
+
+h1 {
+    font-family: 'PlusJakartaSans-ExtraBold.ttf';
+    font-size: 52px;
+}
+#accueil {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+aside img {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    position:sticky;
+    top: 50%;
+
+}
