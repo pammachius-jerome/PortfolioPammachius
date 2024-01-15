@@ -1,57 +1,170 @@
 body {
     color: black;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* ne marche pas à faire */
-    position: sticky;
-    top: 0px;
-
+    /* position: sticky; */
+    position: fixed;
+    top: 10px;
+    /* margin: 20px; */
+    padding: 0 20px;
+    width: 98vw;
+    z-index: 1;
 }
+
 nav img {
-    max-height: 50px;
+    max-height: 70px;
     border-radius: 50%;
+    align-self: center;
 }
 
 #photoPammachius {
     float: left;
-    justify-content: center;
 }
 
 .navDroite {
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
 }
+
 .navDroite a {
     /* display: flex; */
     /* flex-direction: row; */
     text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: 'Inter-Regular.ttf';
+    font-size: 16px;
 
 }
 
 main {
-text-align: center;
+    text-align: center;
 
-} 
+}
+
+#flecheHaut {
+    position: fixed;
+    top: 90vh;
+    right: 1vh;
+    z-index: 1;
+}
 
 h1 {
     font-family: 'PlusJakartaSans-ExtraBold.ttf';
     font-size: 52px;
 }
+
+h3 {
+    font-family: 'PlusJakartaSans-Regular.ttf';
+    font-size: 34px;
+}
+
+p {
+    font-family: 'Inter-Regular.ttf';
+    font-size: 16px;
+}
+
+/* mise en forme des section */
 #accueil {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
+/* zone technologie */
+
+#zoneTechnologie {
+    height: 100vh;
+
+}
+
+.bulle {
+    position: relative;
+    display: inline-block;
+    float: inline;
+}
+
+#bulle1 {
+    top: 50vh;
+    left: 45vw;
+}
+
+#bulle2 {
+    top: 50vh;
+    left: 20vw;
+}
+
+#bulle3 {
+    top: 40vh;
+    left: 8vw;
+}
+
+#bulle4 {
+    top: 60vh;
+    left: 2vw;
+}
+
+#bulle5 {
+    top: 50vh;
+    left: -10vw;
+
+}
+
+#bulle8 {
+    top: 30vh;
+    left: 5vw;
+}
+
+#bulle6 {
+    top: 20vh;
+    left: 8vw;
+}
+
+#bulle7 {
+    top: 15vh;
+    left: 10vw;
+}
+
+#bulle19 {
+    top: 12vh;
+    left: 5vw;
+}
+
+#bulle9 {
+    top: 50vh;
+    left: 15vw;
+}
+
+
+#zoneTechnologie p {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    position: relative;
+    padding: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+
+aside {
+    position: fixed;
+    top: 50vh;
+    z-index: 1;
 }
 
 aside img {
     display: flex;
-    flex-direction: column;
-    height: 20px;
-    position:sticky;
-    top: 50%;
-
+    /* flex-direction: column; */
+    height: 30px;
+    margin: 20px;
+    /* position: sticky; */
+    /* position: fixed; */
+    /* top: 50%; */
+    /* left: 2%; */
 }
